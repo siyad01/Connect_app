@@ -36,7 +36,6 @@ const Notifications = () => {
     } catch (error) {
       console.error("Error accepting connection request:", error);
     }
-    window.location.reload()
   };
 
   // Handle decline connection request
@@ -53,7 +52,6 @@ const Notifications = () => {
     } catch (error) {
       console.error("Error declining connection request:", error);
     }
-    window.location.reload()
 
   };
   const navigate = useNavigate()
@@ -81,7 +79,6 @@ const Notifications = () => {
     } catch (error) {
       console.error("Error viewing message:", error);
     }
-    window.location.reload()
 
   };
   

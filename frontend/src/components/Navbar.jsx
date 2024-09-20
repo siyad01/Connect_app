@@ -82,7 +82,7 @@ export default function Navbar({ user }) {
     try {
       const { data } = await axios.get("/api/user/logout");
       toast.success(data.message);
-      navigate("/login");
+      //navigate("/login");
       setIsAuth(false);
       setUser([]);
     } catch (error) {

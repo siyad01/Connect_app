@@ -30,7 +30,6 @@ const SinglePost = ({ post, user }) => {
           : likes.filter((id) => id !== user._id)
       );
       toast.success(data.message);
-      window.location.reload();
     } catch (error) {
       toast.error(
         error.response?.data?.message || "Failed to like/unlike post"
@@ -47,7 +46,6 @@ const SinglePost = ({ post, user }) => {
       setComments(data.comments);
 
       toast.success(data.message);
-      window.location.reload();
     } catch (error) {
       toast.error(error.response?.data?.message || "Failed to add comment");
     }

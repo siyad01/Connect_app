@@ -47,7 +47,6 @@ export const PostProvider = ({ children }) => {
       toast.success(data.message);
       fetchPosts();
       setLoading(false);
-      navigate("/account");
     } catch (error) {
       toast.error(error.response.data.message);
     }
@@ -63,7 +62,6 @@ export const PostProvider = ({ children }) => {
       toast.success(data.message);
       fetchPosts();
       setLoading(false);
-      navigate("/account");
     } catch (error) {
       toast.error(error.response.data.message);
     }
@@ -84,7 +82,6 @@ export const PostProvider = ({ children }) => {
       setFilePreview("");
       setPostContent("");
       fetchPosts();
-      navigate("/account");
     } catch (error) {
       toast.error(error.response?.data?.message || "Create Post failed");
     }

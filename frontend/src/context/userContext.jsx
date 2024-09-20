@@ -24,7 +24,6 @@ export const UserProvider = ({ children }) => {
       setUser(data.user);
       setIsAuth(true);
       setBtnLoading(false);
-      navigate("/feed");
       localStorage.setItem("authToken", data.token);
 
     } catch (error) {
@@ -41,7 +40,6 @@ export const UserProvider = ({ children }) => {
       setUser(data.user);
       setIsAuth(true);
       setBtnLoading(false);
-      navigate("/feed");
       localStorage.setItem("authToken", data.token);
 
     } catch (error) {
@@ -75,7 +73,6 @@ export const UserProvider = ({ children }) => {
       setUser(data.user); // Update local user state with the new data
       setIsAuth(true); // Set user authentication status
       setBtnLoading(false); // Stop loading animation/button
-      navigate("/account"); // Navigate to account page after successful update
     } catch (error) {
       toast.error(error.response?.data?.message || "Profile update failed");
       setBtnLoading(false); // Stop loading animation/button on error
@@ -88,7 +85,6 @@ export const UserProvider = ({ children }) => {
       toast.success(data.message);
       setUser(data.user); // Update local user state with the new data
       setIsAuth(true); // Set user authentication status
-      navigate("/account"); // Navigate to account page after successful update
     } catch (error) {
       toast.error(error.response?.data?.message || "Data adding failed");
       setBtnLoading(false); // Stop loading animation/button on error
@@ -104,7 +100,6 @@ export const UserProvider = ({ children }) => {
       toast.success(data.message);
       setUser(data.user);
       //setIsAuth(true);
-      navigate("/account");
     } catch (error) {
       toast.error(error.response?.data?.message || "Data adding failed");
       setBtnLoading(false); // St
@@ -120,7 +115,6 @@ export const UserProvider = ({ children }) => {
       toast.success(data.message);
       setUser(data.user);
       //setIsAuth(true);
-      navigate("/account");
     } catch (error) {
       toast.error(error.response?.data?.message || "Data adding failed");
       setBtnLoading(false); // St
