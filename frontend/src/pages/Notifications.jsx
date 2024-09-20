@@ -71,7 +71,7 @@ const Notifications = () => {
         toast.success("Message viewed!");
         setNotifications(notifications.filter(notification => notification.messageId._id !== messageId));
         fetchNotifications()
-        navigate(`/messaging`,400);
+        navigate(400);
       } else {
         const error = await response.json();
         toast.error(error.message);
