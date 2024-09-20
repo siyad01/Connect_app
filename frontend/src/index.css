@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.common-input{
+    @apply mt-1 block w-full px-3 py-2 border-2 border-gray-300 focus:border-[#FFA904] rounded-md shadow-sm focus:outline-none sm:text-sm;
+}
+
+.name-input{
+    @apply flex w-full px-3 py-2 border-2 border-gray-300 focus:border-[#FFA904] rounded-md shadow-sm focus:outline-none sm:text-sm;
+}    
+
+.common-btn{
+    @apply w-full py-2 px-4 bg-[#FFA904]  hover:bg-[#e99803] text-white font-semibold rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500
+}
+.common-btns{
+    @apply w-full space-x-2 py-2 px-2 bg-[#FFA904]  hover:bg-[#e99803] text-white font-semibold rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500
+}
