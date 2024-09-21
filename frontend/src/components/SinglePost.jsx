@@ -156,7 +156,7 @@ const SinglePost = ({ post, user }) => {
                 ? new Date(post.createdAt).toLocaleDateString()
                 : "Unknown date"}
             </p>
-            <p className="text-xs text-gray-500">96,167 followers • Promoted</p>
+            <p className="text-xs text-gray-500">{user.connections.length} Connections</p>
           </div>
           {user._id === post.owner._id && (
             <div className="absolute right-1 top-1">

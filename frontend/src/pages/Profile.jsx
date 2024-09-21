@@ -79,6 +79,7 @@ const ProfileCard = () => {
           <footer className=" text-gray-900 font-semibold py-4 mt-6">
             <div className="container mx-auto text-center">
               <p>&copy; 2024 Connect. All rights reserved.</p>
+              <p>Made by Muhammed Siyad</p>
             </div>
           </footer>
         </div>
