@@ -11,9 +11,8 @@ const NewsComponent = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await axios.get(
+        const response = await fetch(
             `https://newsapi.org/v2/everything?q=technology OR tech OR innovation OR software OR hardware OR AI OR "machine learning" OR blockchain OR internships OR jobs OR careers OR employment OR recruitment OR "job market" OR "hiring trends" OR "IT firms" OR MNCs OR corporations OR enterprise OR "big tech" OR startups OR "Silicon Valley" OR professions OR "industry trends" OR workplace OR "professional development" OR leadership OR management OR upskilling OR reskilling OR talent OR HR&language=en&sortBy=publishedAt&apiKey=f5713111279f4950bf2141aff6a922b2`
-
         );
         setArticles(response.data.articles);
         setLoading(false);
