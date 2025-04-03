@@ -50,17 +50,12 @@
    CLOUDINARY_URL=your_cloudinary_url
    ```
 
-## 📸 Screenshots
-(Add screenshots of your app here)
 
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to fork the repo, create a feature branch, and submit a PR.
 
-## 📜 License
-
-MIT License © 2025 Siyad01
 
 ## 📬 Contact
 
-For any queries, reach out via [LinkedIn](https://linkedin.com/in/yourprofile) or email at `your-email@example.com`. Let's Connect! 🚀
+For any queries, reach out via [LinkedIn](https://www.linkedin.com/in/muhammed-siyad-7bb726234/) or email at `msiyad254@gmail.com`. Let's Connect! 🚀
